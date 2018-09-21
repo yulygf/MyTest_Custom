@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <MyTest_Custom>
+            <version>0.1.0</version>
+        </MyTest_Custom>
+    </modules>
+
+    <global>
+    <models>
+        <mytestcustom>
+            <resourceModel>mytestcustom_resource</resourceModel>
+        </mytestcustom>
+        <mytestcustom_resource>
+            <entities>
+                <table_custom>
+                    <table>mytest_custom_entities</table>
+                </table_custom>
+            </entities>
+        </mytestcustom_resource>
+    </models>
+    <resources>
+        <mytestcustom_setup>
+            <setup>
+                <module>MyTest_Custom</module>
+            </setup>
+        </mytestcustom_setup>
+    </resources>
+</global>
+
+
+</config>
