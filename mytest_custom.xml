@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout>
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" module="mytestcustom">
+                <name>custom</name>
+                <path>mytestcustom/index/index</path>
+                <label>My Custom</label>
+            </action>
+        </reference>
+    </customer_account>
+    <mytestcustom_index_index>
+        <update handle="customer_account" />
+        <reference name="my.account.wrapper">
+            <block type="core/template" name="test" template="mytest_custom/index.phtml"/>
+        </reference>
+    </mytestcustom_index_index>
+</layout>
