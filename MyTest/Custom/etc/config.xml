@@ -1,11 +1,28 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <config>
     <modules>
         <MyTest_Custom>
             <version>0.1.0</version>
         </MyTest_Custom>
     </modules>
-
+    <frontend>
+        <layout>
+            <updates>
+                <mytestcustom>
+                    <file>mytest_custom.xml</file>
+                </mytestcustom>
+            </updates>
+        </layout>
+        <routers>
+            <mytestcustom>
+                <use>standard</use>
+                <args>
+                    <module>MyTest_Custom</module>
+                    <frontName>custom</frontName>
+                </args>
+            </mytestcustom>
+        </routers>
+    </frontend>
     <global>
     <models>
         <mytestcustom>
@@ -27,6 +44,4 @@
         </mytestcustom_setup>
     </resources>
 </global>
-
-
 </config>

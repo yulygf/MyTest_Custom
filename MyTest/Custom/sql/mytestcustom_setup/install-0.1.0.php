@@ -9,7 +9,6 @@ $tableCustom = $installer->getTable('mytestcustom/table_custom');
 
 $installer->startSetup();
 
-$installer->getConnection()->dropTable($tableCustom);
 $table = $installer->getConnection()
     ->newTable($tableCustom)
     ->addColumn('id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
