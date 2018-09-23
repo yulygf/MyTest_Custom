@@ -24,24 +24,26 @@
         </routers>
     </frontend>
     <global>
-    <models>
-        <mytestcustom>
-            <resourceModel>mytestcustom_resource</resourceModel>
-        </mytestcustom>
-        <mytestcustom_resource>
-            <entities>
-                <table_custom>
-                    <table>mytest_custom_entities</table>
-                </table_custom>
-            </entities>
-        </mytestcustom_resource>
-    </models>
-    <resources>
-        <mytestcustom_setup>
-            <setup>
-                <module>MyTest_Custom</module>
-            </setup>
-        </mytestcustom_setup>
-    </resources>
-</global>
+        <models>
+            <mytestcustom>
+                <class>MyTest_Custom_Model</class>
+                <resourceModel>mytestcustom_resource</resourceModel>
+            </mytestcustom>
+            <mytestcustom_resource>
+                <class>MyTest_Custom_Model_Resource</class>
+                <entities>
+                    <table_custom>
+                        <table>mytest_custom_entities</table>
+                    </table_custom>
+                </entities>
+            </mytestcustom_resource>
+        </models>
+        <resources>
+            <mytestcustom_setup>
+                <setup>
+                    <module>MyTest_Custom</module>
+                </setup>
+            </mytestcustom_setup>
+        </resources>
+    </global>
 </config>
